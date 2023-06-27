@@ -1,0 +1,160 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Reset default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Landing page styles */
+.landing-page {
+    text-align: center;
+    position: relative; /* Menentukan konteks posisi relatif */
+    min-height: 100vh; /* Memastikan konten tidak tertutup oleh footer */
+}
+
+header {
+  background-color: #f8f8f8;
+  padding-top: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-nav {
+    background-color: transparent;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  padding: 40px;
+}
+
+.hero {
+  background-image: url('https://epic.spb.ru/hero/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  color: #fff;
+  animation: fade-in 1s;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: slide-up 1s;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  animation: pulse 2s infinite;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.feature {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #777;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.bottom-footer {
+  background-color: transparent;
+  padding: 20px;
+  margin-top: auto;
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Mengatur penempatan ke tengah secara horizontal */
+  align-items: center; /* Mengatur penempatan ke tengah secara vertikal */
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
