@@ -8,32 +8,38 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/Login">Login</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
-          </li>
-          <li>
-            <Link to="/LandingPage">Landing Page</Link>
-          </li>
-        </ul>
-      </nav>
-      <Switch>
-        <Route path="/register">
-          <Register />
-        </Route>
-        <Route path="/Login">
-          <Login />
-        </Route>
-        <Route path="/">
-          <LandingPage />
-        </Route>
-      </Switch>
-    </Router>
+<Router>
+  <div className="header">
+    <div className="logo">
+      <Link to="/">E-Commerce</Link>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/LandingPage">Landing Page</Link>
+        </li>
+        <li>
+          <Link to="/Login">Login</Link>
+        </li>
+        <li>
+          <Link to="/register">Register</Link>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+  <Switch>
+    <Route path="/register">
+      <Register />
+    </Route>
+    <Route path="/Login">
+      <Login />
+    </Route>
+    <Route path="/">
+      <LandingPage />
+    </Route>
+  </Switch>
+</Router>
   );
 };
 

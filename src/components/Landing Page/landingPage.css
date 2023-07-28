@@ -20,7 +20,6 @@ body {
 
 header {
   background-color: #f8f8f8;
-  padding-top: 20px;
 }
 
 nav {
@@ -37,7 +36,7 @@ nav {
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
-  color: #333;
+  color: #f8f8f8;
 }
 
 .navigation li {
@@ -157,4 +156,35 @@ nav {
   100% {
     transform: scale(1);
   }
+}
+/* Gaya untuk header */
+header {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+/* Gaya untuk navigasi */
+.shop-nav {
+  display: flex;
+  justify-content: center; /* Menyusun tautan menu di tengah */
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation li a {
+  color: white;
+  text-decoration: none;
 }

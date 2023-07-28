@@ -19,16 +19,15 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <header>
-        <nav className="shop-nav">
-          <a href="#home" className="logo">E-Commerce</a>
-          <ul className="navigation">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav className="shop-nav">
+        <ul className="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
       <main>
         <section id="home" className="hero">
           <h1>Welcome to E-Commerce</h1>
