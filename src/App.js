@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Login from './components/Login/login';
 import Register from './components/Register/register';
 import LandingPage from './components/Landing Page/landingPage';
+import TableList from './components/TableList/tableList';
 import './App.css';
 
 
@@ -15,6 +16,9 @@ const App = () => {
     </div>
     <nav>
       <ul>
+        <li>
+          <Link to="/tableList">Table List</Link>
+        </li>
         <li>
           <Link to="/LandingPage">Landing Page</Link>
         </li>
@@ -29,6 +33,9 @@ const App = () => {
     </nav>
   </div>
   <Switch>
+  <Route path="/tableList">
+      <TableList />
+    </Route>
     <Route path="/register">
       <Register />
     </Route>

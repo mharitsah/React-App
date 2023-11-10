@@ -58,7 +58,7 @@ nav {
   background-size: cover;
   background-position: center;
   padding: 200px 0;
-  color: #fff;
+  color: #000000;
   animation: fade-in 1s;
 }
 
@@ -187,4 +187,27 @@ header {
 .navigation li a {
   color: white;
   text-decoration: none;
+}
+
+#shop {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.contact {
+  margin: 0 auto;
+  max-width: 600px; /* Sesuaikan lebar maksimum formulir sesuai kebutuhan */
+  margin-top: 100px;
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
