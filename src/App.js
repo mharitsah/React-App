@@ -4,6 +4,7 @@ import Login from './components/Login/login';
 import Register from './components/Register/register';
 import LandingPage from './components/Landing Page/landingPage';
 import TableList from './components/TableList/tableList';
+import Checkout from './components/Checkout/checkout';
 import './App.css';
 
 
@@ -16,6 +17,9 @@ const App = () => {
     </div>
     <nav>
       <ul>
+      <li>
+          <Link to="/checkout">checkout</Link>
+        </li>
         <li>
           <Link to="/tableList">Table List</Link>
         </li>
@@ -33,6 +37,9 @@ const App = () => {
     </nav>
   </div>
   <Switch>
+  <Route path="/checkout">
+      <Checkout />
+    </Route>
   <Route path="/tableList">
       <TableList />
     </Route>

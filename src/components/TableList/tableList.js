@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './tableList.css';
 
 const TableList = () => {
@@ -47,8 +47,8 @@ const TableList = () => {
     };
   
     return (
-      <div>
-        <button onClick={toggleTable}>{showTable ? 'Hide Table' : 'Show Table'}</button>
+      <div style={{ textAlign: 'center' }}>
+        <button style={{justifyContent: 'center', marginTop: '32px',fontWeight: 'bold'}} onClick={toggleTable}>{showTable ? 'Hide Table' : 'Show Table'}</button>
         {showTable && (
           <div>
             <table>
@@ -77,9 +77,9 @@ const TableList = () => {
                 ))}
               </tbody>
             </table>
-            <div>
+            <div style= {{ width: '25%', margin: 'auto', marginTop: '4rem', paddingBottom: '2rem', textAlign: 'center' }}>
               <h2>Add New Product</h2>
-              <form>
+              <form style={{ marginTop: '2rem'}}>
                 <label>Name:</label>
                 <input type="text" name="name" value={newProduct.name} onChange={handleInputChange} />
   
